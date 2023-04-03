@@ -1,3 +1,7 @@
 .active {
     color: rgb(224, 106, 37);
 }
+.pending {
+    color: red;
+    font-weight: bold;
+}

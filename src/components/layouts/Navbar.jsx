@@ -11,8 +11,8 @@ const Navbar = () => {
                 <NavLink to="/contact-us" className={({ isActive, isPending }) => (isActive ? 'active' : '')}>
                     ContactUs
                 </NavLink>
-                <NavLink to="/users" className={({ isActive, isPending }) => (isActive ? 'active' : '')}>
-                    Users
+                <NavLink to="/users" className={({ isActive, isPending }) => (isActive ? 'active' : isPending ? 'pending' : '')}>
+                    Meals
                 </NavLink>
             </ul>
         </>
