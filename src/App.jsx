@@ -6,17 +6,8 @@ function App() {
     return (
         <div className="app">
             <Navbar />
-            <h1>Hello World</h1>
+            <h1 className="text-4xl font-bold text-center py-3">WelCome to Meal DB</h1>
             <Outlet />
-            <Link
-                to="/"
-                style={{
-                    margin: '0px 20px 0px 20px',
-                    color: 'black',
-                    fontWeight: 'bold'
-                }}>
-                Go Back
-            </Link>
         </div>
     );
 }
