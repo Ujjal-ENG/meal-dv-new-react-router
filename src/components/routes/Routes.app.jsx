@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
             {
                 path: 'food-details/:id',
                 element: <UserDetails />,
-                loader: ({ params }) => fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.id}`)
+                loader: async ({ params }) => fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.id}`)
             }
         ]
     }
