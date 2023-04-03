@@ -4,11 +4,13 @@ import About from '../pages/About';
 import ContactUs from '../pages/ContactUs';
 import Users from '../pages/Users';
 import UserDetails from '../pages/UserDetails';
+import ErrorPage from '../../ErrorPage';
 
 export const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: '/about',
