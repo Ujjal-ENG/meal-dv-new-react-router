@@ -6,8 +6,8 @@ const Users = () => {
     const loaderData = useLoaderData();
     return (
         <div className="flex flex-wrap gap-6 p-10">
-            {loaderData.map((el) => (
-                <User key={el.id} data={el} />
+            {loaderData.meals.map((el) => (
+                <User key={el.idMeal} data={el} />
             ))}
         </div>
     );

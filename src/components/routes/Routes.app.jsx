@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
             {
                 path: 'users',
                 element: <Users />,
-                loader: async () => fetch('https://jsonplaceholder.typicode.com/users')
+                loader: async () => fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=')
             },
             {
                 path: ':id',
